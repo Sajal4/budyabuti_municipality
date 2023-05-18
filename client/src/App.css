@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mogra&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#hr1{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 10%;
+  width: 80%;
+  background-color: blueviolet;
+  height: 3px;
+}
+#hr2{
+  margin-bottom: 10px;
+  margin-left: 10%;
+  width: 80%;
+  background-color: rgb(62, 87, 4);
+  height: 3px;
+}
+.solid{
+  margin-left: 10%;
+  margin-bottom: 30px;
+  width: 80%;
+  height: 30px;
+  border-radius: 5px;
+  background-color: rgb(9, 81, 139);
+}
+.leftContainer{
+  margin-left: 10%;
+  width: 250px;
+  height: 500px;
+  background-color: rgb(151, 197, 182);
+}
+.btn-Cntnr{
+  width: 300px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.btn-Cntnr p{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 20px;
+  color: grey;
+}
+.Btn{
+  width: 200px;
+  height: 50px;
+  background-color: rgb(72, 194, 224);
+  font-family: 'Mogra', cursive;
+  font-size: 25px;
+  color: aliceblue;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.Btn:hover{
+  background-color: rgb(10, 119, 146);
+}
+.formContainer{
+  width: 500px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border: 2px solid rgb(136, 136, 136);
+  border-radius: 5px;
+  padding: 10px;
+}
+.formContainer h3{
+  font-family: 'Mogra', cursive;
+  font-weight: lighter;
+  color: rgb(9, 81, 139);
+  border-bottom: 2px solid rgb(9, 81, 139);
+}
+.formElement{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+label{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(9, 81, 139);
+}
+input{
+  width: 270px;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid gray;
+  font-size: 18px;
+}
+.logFormContainer{
+  width: 500px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border: 2px solid rgb(136, 136, 136);
+  border-radius: 5px;
+  padding: 10px;
+}
+.logFormContainer h3{
+  font-family: 'Mogra', cursive;
+  font-weight: lighter;
+  color: rgb(9, 81, 139);
+  border-bottom: 2px solid rgb(9, 81, 139);
+}
+.backBtn{
+  width: 100px;
+  height: 40px;
+  background-color: rgb(219, 190, 145);
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.backBtn:hover{
+  background-color: rgb(194, 116, 7);
+}
+.formBtn{
+  width: 120px;
+  height: 40px;
+  background-color: rgb(82, 194, 247);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.formBtn:hover{
+  background-color: rgb(5, 49, 70);
+  color: white;
+}
+.linkBar{
+  margin-left: 10%;
+  width: 80%;
+  height: 40px;
+  background-color: rgb(5, 55, 112);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.linkBar p{
+  color: white;
+}
