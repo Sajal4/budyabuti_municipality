@@ -60,7 +60,7 @@ const SignForm = () => {
                 <p style={{color:"red"}}>{formErrors.name}</p>
                 <div className='formElement'>
                     <label htmlFor='mobile'>Mobile No. <span style={{color:"red"}}>*</span></label>
-                    <input type="number" name='mobile' id='mobile' placeholder='Enter your mobile no.' onChange={handleChange}/>
+                    <input type="tel" name='mobile' id='mobile' placeholder='Enter your mobile no.' onChange={handleChange}/>
                 </div>
                 <p style={{color:"red"}}>{formErrors.mobile}</p>
                 <div className='formElement'>

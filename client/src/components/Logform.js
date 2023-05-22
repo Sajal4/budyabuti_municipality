@@ -7,7 +7,7 @@ const Logform = () => {
     const [logData, setLogData] = useState({});
     const handleChange=(e)=>{
         setLogData({...logData, [e.target.name]:e.target.value});
-    }
+      }
     const handleLog=(e)=>{
         e.preventDefault();
         if(!logData.mobile || !logData.password){
@@ -21,6 +21,7 @@ const Logform = () => {
                 const token = response.data.Token;
                 if(token){
                     localStorage.setItem('receivedToken', token);
+                    navigate('/grivance');
                 }
             })
         }

@@ -145,9 +145,47 @@ input{
   height: 40px;
   background-color: rgb(5, 55, 112);
   display: flex;
-  align-items: center;
   justify-content: space-evenly;
 }
-.linkBar p{
+.linkBar button{
+  height: 100%;
+  padding: 5px;
+  background-color: inherit;
+  border: none;
   color: white;
+  cursor: pointer;
+  animation: appear 0.5s ease-in;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.linkBar button:hover{
+  background-color: aquamarine;
+  color: black;
+}
+@keyframes appear {
+  0%{
+    transform: translateY(-100px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+.btnDiv{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(5, 55, 112);
+}
+.complainForm{
+  margin: 30px auto;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 10px;
 }
