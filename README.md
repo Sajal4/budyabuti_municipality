@@ -1,7 +1,8 @@
 ### Home Page
 ![image](https://github.com/Sajal4/budyabuti_municipality/blob/main/media/Login%20%26%20Signup.jpg)
 
-
+### Grivance Page With Submittable Form 
+![image](https://github.com/Sajal4/budyabuti_municipality/blob/main/media/Grivance.jpg.png)
 
 # Getting Started with Create React App
 
