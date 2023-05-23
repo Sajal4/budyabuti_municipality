@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from "axios";
+import { BsFillEyeFill, BsFillEyeSlashFill } from "react-icons/bs";
 
 const SignForm = () => {
     const navigate = useNavigate();
@@ -8,7 +9,12 @@ const SignForm = () => {
     const [registered, setRegistered] = useState(false);
     const [formData, setFormData] = useState({})
     const [formErrors, setFormErrors] = useState({});
-    const [passCheck, setPassCheck] = useState()
+    const [passCheck, setPassCheck] = useState();
+    const [showPassword, setShowPassword] = useState(false);
+    const handleTogglePassword = (e) => {
+        e.preventDefault();
+        setShowPassword(!showPassword);
+      };
     const handleChange=(e)=>{
         setFormData({...formData, [e.target.name]:e.target.value});
     }
@@ -65,12 +71,14 @@ const SignForm = () => {
                 <p style={{color:"red"}}>{formErrors.mobile}</p>
                 <div className='formElement'>
                     <label htmlFor='password'>Create Password <span style={{color:"red"}}>*</span></label>
-                    <input type='password' name='password' id='password' placeholder='Create your password' onChange={handleChange}/>
+                    <input type={showPassword ? 'text' : 'password'} value={formData.password} name='password' id='password' placeholder='Create your password' onChange={handleChange}/>
+                    {showPassword ? <button className='eyeBtn' onClick={handleTogglePassword}><BsFillEyeFill style={{color:"rgb(9, 81, 139)"}}/></button> : <button className='eyeBtn' onClick={handleTogglePassword}><BsFillEyeSlashFill style={{color:"rgb(9, 81, 139)"}}/></button>}
                 </div>
                 <p style={{color:"red"}}>{formErrors.password}</p>
                 <div className='formElement'>
                     <label htmlFor='conPassword'>Confirm Password <span style={{color:"red"}}>*</span></label>
-                    <input type='password' name='conPassword' id='conPassword' placeholder='Re-enter your password' onChange={(e)=>{setPassCheck(e.target.value)}}/>
+                    <input type={showPassword ? 'text' : 'password'} value={passCheck} name='conPassword' id='conPassword' placeholder='Re-enter your password' onChange={(e)=>{setPassCheck(e.target.value)}}/>
+                    {showPassword ? <button className='eyeBtn' onClick={handleTogglePassword}><BsFillEyeFill style={{color:"rgb(9, 81, 139)"}}/></button> : <button className='eyeBtn' onClick={handleTogglePassword}><BsFillEyeSlashFill style={{color:"rgb(9, 81, 139)"}}/></button>}
                 </div>
                 <button className='formBtn' onClick={handleSubmit}>Submit</button>
             </form>

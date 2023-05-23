@@ -34,7 +34,7 @@ const ComplainForm = () => {
                 {selectedImage && (
                 <div>
                     <h2>Preview:</h2>
-                    <img src={URL.createObjectURL(selectedImage)} alt="Preview" style={{ width: '200px' }} />
+                    <img src={URL.createObjectURL(selectedImage)} alt="Preview" style={{ width: '150px' }} />
                 </div>
                 )}
             </div>
@@ -48,4 +48,4 @@ const ComplainForm = () => {
   )
 }
 
-export default ComplainForm
+export default ComplainForm;

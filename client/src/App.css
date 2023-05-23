@@ -115,6 +115,11 @@ input{
   color: rgb(9, 81, 139);
   border-bottom: 2px solid rgb(9, 81, 139);
 }
+.eyeBtn{
+  border: none;
+  margin-left: -40px;
+  cursor: pointer;
+}
 .backBtn{
   width: 100px;
   height: 40px;
@@ -178,7 +183,7 @@ input{
   background-color: rgb(5, 55, 112);
 }
 .complainForm{
-  margin: 30px auto;
+  margin-left: 200px;
   width: 500px;
   height: 500px;
   display: flex;
@@ -188,4 +193,20 @@ input{
   border: 2px solid black;
   border-radius: 5px;
   padding: 10px;
+}
+.cmpln-Cntnr{
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  animation: appear 0.5s ease-in;
+}
+.msgBox{
+    margin-top: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  animation: appear 0.5s ease-in;
 }
