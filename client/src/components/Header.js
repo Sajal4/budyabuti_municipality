@@ -5,7 +5,8 @@ const Header = () => {
     <>
         <hr id='hr1'/>
         <hr id='hr2'/>
-        <div className='solid'></div>
+        <div className='solid'><h2>Welcome to Our Municipality</h2></div>
+        {/* <div className='solid'></div> */}
     </>
   )
 }

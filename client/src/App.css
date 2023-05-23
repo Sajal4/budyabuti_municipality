@@ -27,6 +27,8 @@
   width: 80%;
   height: 30px;
   border-radius: 5px;
+  text-align: center;
+  color: white;
   background-color: rgb(9, 81, 139);
 }
 .leftContainer{
